@@ -1,0 +1,325 @@
+body{
+  padding: 0;
+  margin: 0;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 48px;
+  padding: 8px;
+}
+.logoImage{
+  margin-top: 10px;
+  margin-left: 16px;
+}
+.indexLink{
+  margin-right: 40px;
+}
+.indexLink a{
+  margin-right: 20px;
+  text-decoration: none;
+  color: #3a3a39;
+  font-family: arial,sans-serif;
+}
+.indexLink a:hover{
+  text-decoration: #3a3a39;
+  text-decoration-line: underline;
+  color: #696968;
+}
+.redLabel{
+  padding: 0;
+  margin: 0;
+  padding-left: 35px;
+  width: 100vw;
+  height: 50px;
+  color: #d93025;
+  font-size: 20px;
+  margin: 25px 0px;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  text-decoration: none;
+  font-family: arial,sans-serif;
+  border-bottom: 1px#e0e0df solid;
+}
+.redLabel label{
+  margin-left: 10px;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 20px;
+  vertical-align: baseline;
+}
+.formContainer{
+  display: flex;
+  width: 1140px;
+  height: 40vh;
+  margin-left: 2vw;
+}
+.formContainer .col .row form .containerPanel{
+  margin-bottom: 100px;
+}
+.col{
+  width: 1140px;
+}
+.formContainerLeft{
+  width: 65vw;
+  height: 100%;
+}
+.formContainerRight{
+  width: 35vw;
+  height: 100%;
+}
+.containerElement{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  text-decoration: none;
+  font-family: arial,sans-serif;
+}
+.containerLeft, .containerCenter, .containerRight{
+  float: left;
+  display: inline-block;
+  min-width: 167px;
+  width: 16%;
+  font-size: 16px;
+  min-height: 42px;
+  font-weight: 500;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  text-decoration: none;
+  font-family: arial,sans-serif;
+}
+.containerCenter{
+  min-height: 41px;
+  vertical-align: middle;
+  width: 570px;
+}
+.containerRight{
+  width: 33%;
+  font-size: 13px;
+  font-weight: 700;
+  color: #777;
+  padding-left: 5px;
+  padding-left: 0px;
+}
+.containerLeft label{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  text-decoration: none;
+  color: #222;
+  font-size: 13px;
+  line-height: 16px;
+}
+.containerCenter input{
+  width: 100%;
+  text-align: left;
+  border-radius: 1px;
+  border: 1px solid #d9d9d9;
+  border-top-color: rgb(217, 217, 217);
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top: 1px solid #c0c0c0;
+  font-size: 13px;
+  height: 25px;
+  padding: 1px 8px;
+}
+.containerRight span{
+  height: 30px;
+  display: table-cell;
+  vertical-align: middle;
+  color: #555;
+  font-family: arial,sans-serif;
+  padding-left: 10px;
+  font-size: 11px;
+  white-space: pre;
+  font-weight: inherit;
+  font-style: inherit;
+}
+.containerCenter #explanation4, .twoInputs .containerCenter1 input{
+  width: 100%;
+  text-align: left;
+  border-radius: 1px;
+  border: 1px solid #d9d9d9;
+  border-top-color: rgb(217, 217, 217);
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top: 1px solid #c0c0c0;
+  font-size: 13px;
+  height: 25px;
+  padding: 1px 8px;
+}
+.twoInputs{
+  position: relative;
+  float: left;
+  display: inline-block;
+  min-width: 167px;
+  min-height: 41px;
+  vertical-align: middle;
+  width: 570px;
+  display: flex;
+  justify-content: space-between;
+}
+.twoInputs .containerCenter1{
+  width: 50vw;
+  margin-right: 10px;
+}
+.twoInputs .containerCenter1 input{
+  width: 92%;
+}
+.line{
+  position: relative;
+  padding-top: 30px;
+  clear: both;
+  border-top: 1px solid #ebebeb;
+}
+.containerLeft a{
+  text-decoration: none;
+  font-size: 12px;
+}
+#floatingSelect{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  text-indent: 4px;
+  border-radius: 2px;
+  background-color: #f5f5f5;
+  border: 1px solid #dcdcdc;
+  color: #444;
+  cursor: default;
+  font-size: 11px;
+  font-weight: bold;
+  line-height: 27px;
+  list-style: none;
+  min-width: 46px;
+  outline: none;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  font-style: inherit;
+  vertical-align: baseline;
+  font-family: arial,sans-serif;
+}
+#customSearch{
+  user-select: none;
+  line-height: 100%;
+  height: 30px;
+  min-width: 120px;
+  float: right;
+  margin: 10px 0;
+  padding: 0 12px;
+  box-shadow: none;
+  background-color: #4d90fe;
+  border: 1px solid #3079ed;
+  color: #fff;
+  border-radius: 2px;
+  cursor: default;
+  font-size: 11px;
+  font-weight: bold;
+  text-align: center;
+  white-space: nowrap;
+  outline: 0;
+  font-family: arial,sans-serif;
+}
+#fourLinks a{
+  text-decoration: none;
+}
+/*The pages will be responsive for full HD (1920x1080px), HD, Tablet (i pad), Cell Phone (i phone X).*/
+@media (max-width: 1366px){
+  .formContainer{
+  height: 60vh;
+  }
+}
+@media (max-width: 768px){
+  .formContainer{
+  height: 30vh;
+  }
+  .containerCenter{
+  min-height: 41px;
+  vertical-align: middle;
+  width: 470px;
+  }
+  .containerRight span, .containerRight, .containerRight span a{
+    color: #fff;
+  }
+  .twoInputs .containerCenter1 #explanation4{
+  width: 166px;
+  }
+}
+@media screen and (max-width: 375px){
+  .formContainer{
+  display: flex;
+  width: 1140px;
+  height: 140vh;
+  margin-left: 2vw;
+  }
+  .formContainer .col .row form .containerPanel{
+  margin-bottom: 100px;
+  }
+  .containerElement{
+  display: flex;
+  flex-direction: column;
+  height: 80px;
+  }
+  .containerCenter{
+  min-height: 41px;
+  width: 360px;
+  }
+  .containerRight{
+  width: 33%;
+  font-size: 13px;
+  font-weight: 700;
+  }
+  .containerLeft label{
+  font-size: 13px;
+  line-height: 16px;
+  }
+  .containerCenter input{
+  width: 100%;
+  text-align: left;
+  border-radius: 1px;
+  height: 25px;
+  padding: 1px 8px;
+  }
+  .containerRight span{
+  height: 30px;
+  padding-left: 10px;
+  font-size: 11px;
+  }
+  .twoInputs{
+  position: relative;
+  float: left;
+  display: inline-block;
+  min-width: 167px;
+  min-height: 41px;
+  vertical-align: middle;
+  width: 570px;
+  flex-direction: column;
+  }
+  .twoInputs .containerCenter1{
+  width: 30vw;
+  margin-right: -10px;
+  height: 55px;
+  }
+  .twoInputs .containerCenter1 input{
+  width: 46%;
+  }
+}

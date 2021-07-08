@@ -1,0 +1,32 @@
+/* I'll customize the footer for all pages*/
+footer{
+  margin-top: 63vh;
+  width: 100vw;
+  height:35px;
+}
+footer .footerSpan{
+  border-bottom: 1px solid #dadce0;
+  background-color: rgb(231, 229, 229);
+}
+footer .footerSpan span{
+  color: rgba(0,0,0,.54);
+  padding-left: 27px;
+  font-size: 14px;
+  line-height: 40px;
+  font-family: arial,sans-serif;
+  display: flex;
+  align-items: center;
+}
+.footerSpan span img{
+  width: 10vw
+}
+@media (max-width: 768px){
+  footer .footerSpan span img{
+    width: 18vw
+  }
+}
+@media screen and (max-width: 375px){
+  footer .footerSpan span img{
+    width: 38vw
+  }
+}

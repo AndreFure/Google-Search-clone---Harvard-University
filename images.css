@@ -1,0 +1,58 @@
+/* I'll customize the header */
+.customSearch ul li a{
+  color: rgba(39, 39, 39, 0.87);
+}
+.customSearch ul li a:hover{
+  color: rgba(75, 74, 74, 0.87);
+}
+/* I'll customize the main image of the page. */
+.googleImage{
+  margin-top: 11vh;
+  margin-bottom: -3vh;
+  margin-left: 4vw;
+}
+.spanImage {
+  color: #4285f4;
+  font: 16px/16px roboto-regular, arial, sans-serif;
+  position: relative;
+  left: -55px;
+  top: 76px;
+  white-space: nowrap;
+}
+/* I will customize the search form of the main page of Google and that of Google Images. */
+.searchPanel{
+  border-radius: 22px;
+  background: #ffffff;
+}
+button{
+  background: none;
+  border: none;
+}
+.magnifyingGlass img{
+  width: auto;
+  height: 14px;
+}
+.magnifyingGlass .blue .magnifyingGlassBlue img{
+  background-color: white;
+  width: auto;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+}
+.camera img{
+  width: 24px;
+  height: 24px;
+}
+@media screen and (max-width: 375px){
+  .googleImage{
+    margin-left: 12vw;
+  }
+  .formContainer{
+    margin-top: 0vh;
+  }
+  .keyword{
+  width: 65%;
+  }
+}

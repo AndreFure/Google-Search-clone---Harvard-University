@@ -1,0 +1,150 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+/* I will customize the body of my version of the Google search page and much of my version of the Google Images page */
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  visibility: visible;
+  align-items: center;
+}
+/* I'll customize the header */
+.header{
+  display: flex;
+  justify-content: flex-end;
+  width: 100vw;
+  height: 10vh;
+}
+.customSearch{
+  display: flex;
+  justify-content: flex-start;
+  width: 15vw;
+  margin-top: 15px;
+}
+.customSearch ul{
+  display: flex;
+  flex-direction: row;
+}
+.customSearch ul li{
+  margin: 5px;
+  text-decoration: none;
+  list-style: none;
+  font-family: Roboto, 'Segoe UI', Tahoma, sans-serif;
+  font-size: 81.25%;
+  width: 120px;
+}
+
+.customSearch ul li a{
+  color: rgba(0,0,0,0.87);
+  text-decoration: none;
+}
+.customSearch ul li a:hover{
+  color: rgba(39, 39, 39, 0.87);
+  text-decoration: underline;
+}
+/* I'll customize the main image of the page. */
+.googleImage{
+  display: flex;
+  margin-top: 20vh;
+}
+/* I will customize the search form of the main page of Google and that of Google Images. */
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.searchPanel{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  width: 561px;
+  height: 44px;
+  margin-top: 5vh;
+  background-color: white;
+  border-radius: 22px;
+  border: 1px solid #dfe1e5;
+}
+.searchPanel:hover{
+  background-color: #fff;
+  box-shadow: 0 1px 6px rgba(32,33,36,.28);
+  border-color: rgba(223,225,229,0);
+}
+.glass{
+  background-color: white;
+  width: 10%;
+  height: 20px;
+  background-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+}
+.keyword{
+  width: 80%;
+  border: 0;
+}
+#submit{
+  background-color: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  border-radius: 4px;
+  color: #3c4043;
+  font-family: arial,sans-serif;
+  font-size: 14px;
+  margin: 30px 4px;
+  padding: 0 16px;
+  line-height: 27px;
+  height: 36px;
+  min-width: 54px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+}
+#submit:hover{
+  box-shadow: 0 1px 1px rgba(0,0,0,.1);
+  background-color: #f8f9fa;
+  border: 1px solid #dadce0;
+  color: #202124;
+}
+
+/*The pages will be responsive for full HD (1920x1080px), HD, Tablet (i pad), Cell Phone (i phone X).*/
+@media (max-width: 768px){
+  .customSearch{
+    margin: 15px;
+    font-size: 91.25%;
+    margin-right: 15vw;
+    color: #3c4043;
+  }
+  .searchPanel{
+    margin-left: 5vw;
+  }
+  .googleImage{
+  margin-top: 10vh;
+  }
+}
+
+@media screen and (max-width: 375px){
+  .customSearch{
+    margin-right: 45vw;
+  }
+  .formContainer{
+    margin-top: -2vh;
+    margin-left: -5vw;
+  }
+  .searchPanel{
+    width: 90vw;
+  }
+  .googleImage{
+  margin-top: 5vh;
+  }
+  .buttons{
+    display: flex;
+    margin-left: 5vw;
+  }
+}

@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="advancedSearch.css">
+  <link rel="stylesheet" href="footer.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <div class="logoImage"><img src="https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_74x24px.svg"
+        alt="Google logo">
+    </div>
+    <div class="indexLink"><a href="index.html">Google</a></div>
+  </header>
+  <div class=" redLabel">
+    <label>Advanced Search</label>
+  </div>
+  <div class="formContainer">
+    <div class="col">
+      <div class="row">
+        <form for="customSearch" action="https://www.google.com/search?q=" style="overflow:visible" id="tsf"
+          data-submitfalse="q" method="GET" name="f" role="search">
+          <div class="containerPanel">
+            <div class="containerElement">
+              <div class="containerLeft">Find pages with...</div>
+              <div class="containerCenter"></div>
+              <div class="containerRight">To do this in the search box.</div>
+            </div>
+            <div class="containerElement">
+              <div class="containerLeft"><label for="explanation">all these words:</label></div>
+              <div class="containerCenter">
+                <input type="text" id="explanation">
+              </div>
+              <div class="containerRight"><span>Type the important words: teaching techniques</span></div>
+            </div>
+            <div class="containerElement">
+              <div class="containerLeft"><label for="explanation1">this exact word or phrase:</label></div>
+              <div class="containerCenter">
+                <input type="text" id="explanation1">
+              </div>
+              <div class="containerRight"><span>Put exact words in quotes: "speed reading"</span></div>
+            </div>
+            <div class="containerElement">
+              <div class="containerLeft"><label for="explanation2">any of these words:</label></div>
+              <div class="containerCenter">
+                <input type="text" id="explanation2">
+              </div>
+              <div class="containerRight"><span>Type OR between all the words you want: child OR adults</span></div>
+            </div>
+            <div class="containerElement">
+              <div class="containerLeft"><label for="explanation3">none of these words:</label></div>
+              <div class="containerCenter">
+                <input type="text" id="explanation3">
+              </div>
+              <div class="containerRight"><span>Put a minus sign just before words that you don't want: -phonics</span>
+              </div>
+            </div>
+            <div class="containerElement">
+              <div class="containerLeft"><label for="explanation4">numbers ranging from:</label></div>
+              <div class="twoInputs">
+                <div class="containerCenter1">
+                  <input type="text" id="explanation4">
+                </div>
+                <div class="containerCenter1">to
+                  <input type="text" id="explanation4">
+                </div>
+              </div>
+              <div class="containerRight"><span>Put two full stops between the numbers and add a unit of measurement:
+                  10..35 kg, £300..£500, 2010..2011</span>
+              </div>
+            </div>
+          </div>
+          <div class="line"></div>
+          <div class="containerPanel">
+            <div class="containerElement" style="height: 50px;">
+              <div class="containerLeft">Then narrow your results by...</div>
+              <div class="containerCenter"></div>
+              <div class="containerRight"></div>
+            </div>
+            <div class="containerElement">
+              <div class="containerLeft"><label for="explanation">language:</label></div>
+              <div class="containerCenter">
+                <div class="form-floating">
+                  <select class="form-select" id="floatingSelect" aria-label="Floating label select example"
+                    style="height: 27px;">
+                    <option value="-1">any language</option>
+                    <option value="0">Afrikaans</option>
+                    <option value="1">Arabic</option>
+                    <option value="2">Armenian</option>
+                    <option value="3">Belarusian</option>
+                    <option value="4">Bulgarian</option>
+                    <option value="5">Catalan</option>
+                    <option value="6">Chinese (Simplified)</option>
+                    <option value="7">Chinese (Traditional)</option>
+                    <option value="8">Croatian</option>
+                    <option value="9">Czech</option>
+                    <option value="10">Danish</option>
+                    <option value="11">Dutch</option>
+                    <option value="12">English</option>
+                    <option value="13">Esperanto</option>
+                    <option value="14">Estonian</option>
+                    <option value="15">Filipino</option>
+                    <option value="16">Finnish</option>
+                    <option value="17">French</option>
+                    <option value="18">German</option>
+                    <option value="19">Greek</option>
+                    <option value="20">Hebrew</option>
+                    <option value="21">Hindi</option>
+                    <option value="22">Hungarian</option>
+                    <option value="23">Icelandic</option>
+                    <option value="24">Italian</option>
+                    <option value="25">Japanese</option>
+                    <option value="26">Korean</option>
+                    <option value="27">Latvian</option>
+                    <option value="28">Lithuanian</option>
+                    <option value="29">Norwegian</option>
+                    <option value="30">Persian</option>
+                    <option value="31">Polish</option>
+                    <option value="32">Portuguese</option>
+                    <option value="33">Romanian</option>
+                    <option value="34">Russian</option>
+                    <option value="35">Serbian</option>
+                    <option value="36">Slovak</option>
+                    <option value="37">Slovenian</option>
+                    <option value="38">Spanish</option>
+                    <option value="39">Swahili</option>
+                    <option value="40">Thai</option>
+                    <option value="41">Turkish</option>
+                    <option value="42">Ukrainian</option>
+                    <option value="43">Vietnamese</option>
+                  </select>
+                </div>
+              </div>
+              <div class="containerRight"><span>Type the important words: teaching techniques</span></div>
+            </div>
+            <div class="containerElement">
+              <div class="containerLeft"><label for="explanation">region:</label></div>
+              <div class="containerCenter">
+                <div class="form-floating">
+                  <select class="form-select" id="floatingSelect" aria-label="Floating label select example"
+                    style="height: 27px;">
+                    <option value="0">any region</option>
+                    <option value="1">Afghanistan</option>
+                    <option value="2">Albania</option>
+                    <option value="3">Algeria</option>
+                    <option value="4">American Samoa</option>
+                    <option value="5">Andorra</option>
+                    <option value="6">Angola</option>
+                    <option value="7">Anguilla</option>
+                    <option value="8">Antarctica</option>
+                    <option value="9">Antigua &amp; Barbuda</option>
+                    <option value="10">Argentina</option>
+                    <option value="11">Armenia</option>
+                    <option value="12">Aruba</option>
+                    <option value="13">Australia</option>
+                    <option value="14">Austria</option>
+                    <option value="15">Azerbaijan</option>
+                    <option value="16">Bahamas</option>
+                    <option value="17">Bahrain</option>
+                    <option value="18">Bangladesh</option>
+                    <option value="19">Barbados</option>
+                    <option value="20">Belarus</option>
+                    <option value="21">Belgium</option>
+                    <option value="22">Belize</option>
+                    <option value="23">Benin</option>
+                    <option value="24">Bermuda</option>
+                    <option value="25">Bhutan</option>
+                    <option value="26">Bolivia</option>
+                    <option value="27">Bosnia &amp; Herzegovina</option>
+                    <option value="28">Botswana</option>
+                    <option value="29">Bouvet Island</option>
+                    <option value="30">Brazil</option>
+                    <option value="31">British Indian Ocean Territory</option>
+                    <option value="32">British Virgin Islands</option>
+                    <option value="33">Brunei</option>
+                    <option value="34">Bulgaria</option>
+                    <option value="35">Burkina Faso</option>
+                    <option value="36">Burundi</option>
+                    <option value="37">Cambodia</option>
+                    <option value="38">Cameroon</option>
+                    <option value="39">Canada</option>
+                    <option value="40">Cape Verde</option>
+                    <option value="41">Cayman Islands</option>
+                    <option value="42">Central African Republic</option>
+                    <option value="43">Chad</option>
+                    <option value="44">Chile</option>
+                    <option value="46">China</option>
+                    <option value="47">Christmas Island</option>
+                    <option value="48">Cocos (Keeling) Islands</option>
+                    <option value="49">Colombia</option>
+                    <option value="50">Comoros</option>
+                    <option value="51">Congo - Brazzaville</option>
+                    <option value="52">Congo - Kinshasa</option>
+                    <option value="53">Cook Islands</option>
+                    <option value="54">Costa Rica</option>
+                    <option value="55">Côte d’Ivoire</option>
+                    <option value="56">Croatia</option>
+                    <option value="57">Cuba</option>
+                    <option value="58">Cyprus</option>
+                    <option value="59">Czechia/option>
+                    <option value="60">Denmark</option>
+                    <option value="61">Djibouti</option>
+                    <option value="62">Dominica</option>
+                    <option value="63">Dominican Republic</option>
+                    <option value="64">Ecuador</option>
+                    <option value="65">Egypt</option>
+                    <option value="66">El Salvador</option>
+                    <option value="67">Equatorial Guinea</option>
+                    <option value="68">Eritrea</option>
+                    <option value="69">Estonia</option>
+                    <option value="70">Eswatini</option>
+                    <option value="71">Ethiopia</option>
+                    <option value="72">Falkland Islands (Islas Malvinas)</option>
+                    <option value="73">Faroe Islands</option>
+                    <option value="74">Fiji</option>
+                    <option value="75">Finland</option>
+                    <option value="76">France</option>
+                    <option value="77">French Guiana</option>
+                    <option value="78">French Polynesia</option>
+                    <option value="79">French Southern Territories</option>
+                    <option value="80">Gabon</option>
+                    <option value="81">Gambia</option>
+                    <option value="82">Georgia</option>
+                    <option value="83">Germany</option>
+                    <option value="84">Ghana</option>
+                    <option value="85">Gibraltar</option>
+                    <option value="86">Greece</option>
+                    <option value="87">Greenland</option>
+                    <option value="88">Grenada</option>
+                    <option value="89">Guadeloupe</option>
+                    <option value="90">Guam</option>
+                    <option value="91">Guatemala</option>
+                    <option value="92">Guinea</option>
+                    <option value="93">Guinea-Bissau</option>
+                    <option value="94">Guyana</option>
+                    <option value="95">Haiti</option>
+                    <option value="96">Heard &amp; McDonald Islands</option>
+                    <option value="97">Honduras</option>
+                    <option value="98">Hong Kong</option>
+                    <option value="99">Hungary</option>
+                    <option value="100">Iceland</option>
+                    <option value="101">India</option>
+                    <option value="102">Indonesia</option>
+                    <option value="103">Iran</option>
+                    <option value="104">Iraq</option>
+                    <option value="105">Ireland</option>
+                    <option value="106">Israel</option>
+                    <option value="107">Italy</option>
+                    <option value="108">Jamaica</option>
+                    <option value="109">Japan</option>
+                    <option value="110">Jordan</option>
+                    <option value="111">Kazakhstan</option>
+                    <option value="112">Kenya</option>
+                    <option value="113">Kiribati</option>
+                    <option value="114">Kuwait</option>
+                    <option value="115">Kyrgyzstan</option>
+                    <option value="116">Laos</option>
+                    <option value="117">Latvia</option>
+                    <option value="118">Lebanon</option>
+                    <option value="119">Lesotho</option>
+                    <option value="120">Liberia</option>
+                    <option value="121">Libya</option>
+                    <option value="122">Liechtenstein</option>
+                    <option value="121">Lithuania</option>
+                    <option value="122">Luxembourg</option>
+                    <option value="123">Macao</option>
+                    <option value="124">Madagascar</option>
+                    <option value="125">Malawi</option>
+                    <option value="126">Malaysia</option>
+                    <option value="127">Maldives</option>
+                    <option value="128">Mali</option>
+                    <option value="129">Malta</option>
+                    <option value="130">Marshall Islands</option>
+                    <option value="131">Martinique</option>
+                    <option value="132">Mauritania</option>
+                    <option value="133">Mauritius</option>
+                    <option value="134">Mayotte</option>
+                    <option value="135">Mexico</option>
+                    <option value="136">Micronesia</option>
+                    <option value="137">Moldova</option>
+                    <option value="138">Monaco</option>
+                    <option value="139">Mongolia</option>
+                    <option value="140">Montserrat</option>
+                    <option value="141">Morocco</option>
+                    <option value="142">Mozambique</option>
+                    <option value="143">Myanmar (Burma)</option>
+                    <option value="144">Namibia</option>
+                    <option value="145">Nauru</option>
+                    <option value="146">Nepal</option>
+                    <option value="147">Netherlands</option>
+                    <option value="148">New Caledonia</option>
+                    <option value="149">New Zealand</option>
+                    <option value="150">Nicaragua</option>
+                    <option value="151">Niger</option>
+                    <option value="152">Nigeria</option>
+                    <option value="153">Niue</option>
+                    <option value="154">Norfolk Island</option>
+                    <option value="155">North Korea</option>
+                    <option value="156">North Macedonia</option>
+                    <option value="157">Northern Mariana Islands</option>
+                    <option value="158">Norway</option>
+                    <option value="159">Oman</option>
+                    <option value="160">Pakistan</option>
+                    <option value="161">Palau</option>
+                    <option value="162">Palestine</option>
+                    <option value="163">Panama</option>
+                    <option value="164">Papua New Guinea</option>
+                    <option value="165">Paraguay</option>
+                    <option value="166">Peru</option>
+                    <option value="167">Philippines</option>
+                    <option value="168">Pitcairn Islands</option>
+                    <option value="169">Poland</option>
+                    <option value="170">Portugal</option>
+                    <option value="171">Puerto Rico</option>
+                    <option value="172">Qatar</option>
+                    <option value="173">Réunion</option>
+                    <option value="174">Romania</option>
+                    <option value="175">Russia</option>
+                    <option value="176">Rwanda</option>
+                    <option value="177">Samoa</option>
+                    <option value="178">San Marino</option>
+                    <option value="179">São Tomé &amp; Príncipe</option>
+                    <option value="180">Saudi Arabia</option>
+                    <option value="181">Senegal</option>
+                    <option value="182">Serbia</option>
+                    <option value="183">Seychelles</option>
+                    <option value="184">Sierra Leone</option>
+                    <option value="185">Singapore</option>
+                    <option value="186">Slovakia</option>
+                    <option value="187">Slovenia</option>
+                    <option value="188">Solomon Islands</option>
+                    <option value="189">Somalia</option>
+                    <option value="190">South Africa</option>
+                    <option value="191">South Georgia &amp; South Sandwich Islands</option>
+                    <option value="192">South Korea</option>
+                    <option value="193">Spain</option>
+                    <option value="194">Sri Lanka</option>
+                    <option value="195">St. Helena</option>
+                    <option value="196">St. Kitts &amp; Nevis</option>
+                    <option value="197">St. Lucia</option>
+                    <option value="198">St. Pierre &amp; Miquelon</option>
+                    <option value="199">St. Vincent &amp; Grenadines</option>
+                    <option value="200">Sudan</option>
+                    <option value="202">Suriname</option>
+                    <option value="203">Svalbard &amp; Jan Mayen</option>
+                    <option value="204">Sweden</option>
+                    <option value="205">Switzerland</option>
+                    <option value="206">Syria</option>
+                    <option value="207">Taiwan</option>
+                    <option value="208">Tajikistan</option>
+                    <option value="209">Tanzania</option>
+                    <option value="210">Thailand</option>
+                    <option value="211">Togo</option>
+                    <option value="212">Tokelau</option>
+                    <option value="213">Tonga</option>
+                    <option value="214">Trinidad &amp; Tobago</option>
+                    <option value="215">Tunisia</option>
+                    <option value="216">Turkey</option>
+                    <option value="217">Turkmenistan</option>
+                    <option value="218">Turks &amp; Caicos Islands</option>
+                    <option value="219">Tuvalu</option>
+                    <option value="220">U.S. Outlying Islands</option>
+                    <option value="221">U.S. Virgin Islands</option>
+                    <option value="222">Uganda</option>
+                    <option value="223">Ukraine</option>
+                    <option value="224">United Arab Emirates</option>
+                    <option value="225">United Kingdom</option>
+                    <option value="226">United States</option>
+                    <option value="227">Uruguay</option>
+                    <option value="228">Uzbekistan</option>
+                    <option value="229">Vanuatu</option>
+                    <option value="230">Vatican City</option>
+                    <option value="231">Venezuela</option>
+                    <option value="232">Vietnam</option>
+                    <option value="233">Wallis &amp; Futuna</option>
+                    <option value="234">Western Sahara</option>
+                    <option value="235">Yemen</option>
+                    <option value="236">Zambia</option>
+                    <option value="237">Zimbabwe</option>
+                  </select>
+                </div>
+              </div>
+              <div class="containerRight"><span>Find pages published in a particular region.</span></div>
+            </div>
+            <div class="containerElement">
+              <div class="containerLeft"><label for="explanation">last update:</label></div>
+              <div class="containerCenter">
+                <div class="form-floating">
+                  <select class="form-select" id="floatingSelect" aria-label="Floating label select example"
+                    style="height: 27px;">
+                    <option value="0">anytime</option>
+                    <option value="1">past 24 hours</option>
+                    <option value="2">past week</option>
+                    <option value="3">past month</option>
+                    <option value="4">past year</option>
+                  </select>
+                </div>
+              </div>
+              <div class="containerRight"><span>Find pages updated within the time that you specify.</span></div>
+            </div>
+            <div class="containerElement">
+              <div class="containerLeft"><label for="explanation5">site or domain:</label></div>
+              <div class="containerCenter">
+                <input type="text" id="explanation5">
+              </div>
+              <div class="containerRight"><span>Search one site (like wikipedia.org ) or limit your results to a domain
+                  like .edu, .org or .gov</span></div>
+            </div>
+            <div class="containerElement">
+              <div class="containerLeft"><label for="explanation">terms appearing:</label></div>
+              <div class="containerCenter">
+                <div class="form-floating">
+                  <select class="form-select" id="floatingSelect" aria-label="Floating label select example"
+                    style="height: 27px;">
+                    <option value="0">anywhere in the page</option>
+                    <option value="1">in the title of the page</option>
+                    <option value="2">in the text of the page</option>
+                    <option value="3">in the URL of the page</option>
+                    <option value="4">in links to the page</option>
+                  </select>
+                </div>
+              </div>
+              <div class="containerRight"><span>Search for terms in the whole page, page title or web address, or links
+                  to the page you're looking for.</span></div>
+            </div>
+            <div class="containerElement">
+              <div class="containerLeft"><a
+                  href="https://support.google.com/websearch?p=adv_safesearch&amp;hl=en">SafeSearch</a>:</div>
+              <div class="containerCenter">
+                <div class="form-floating">
+                  <select class="form-select" id="floatingSelect" aria-label="Floating label select example"
+                    style="height: 27px;">
+                    <option value="0">Show explicit result</option>
+                    <option value="1">Hide explicit results</option>
+                  </select>
+                </div>
+              </div>
+              <div class="containerRight"><span>Tell <a
+                    href="https://support.google.com/websearch?p=adv_safesearch&amp;hl=en">SafeSearch</a> whether to
+                  filter sexually explicit content.</span></div>
+            </div>
+            <div class="containerElement">
+              <div class="containerLeft"><label for="explanation">file type:</label></div>
+              <div class="containerCenter">
+                <div class="form-floating">
+                  <select class="form-select" id="floatingSelect" aria-label="Floating label select example"
+                    style="height: 27px;">
+                    <option value="0">any format</option>
+                    <option value="1">Adobe Acrobat PDF (.pdf)</option>
+                    <option value="2">Adobe Postscript (.ps)</option>
+                    <option value="3">Autodesk DWF (.dwf)</option>
+                    <option value="4">Google Earth KML (.kml)</option>
+                    <option value="5">Google Earth KMZ (.kmz)</option>
+                    <option value="6">Microsoft Excel (.xls)</option>
+                    <option value="7">Microsoft PowerPoint (.ppt)</option>
+                    <option value="0">Microsoft Word (.doc)</option>
+                    <option value="1">Rich Text Format (.rtf)</option>
+                    <option value="2">Shockwave Flash (.swf)</option>
+                  </select>
+                </div>
+              </div>
+              <div class="containerRight"><span>Find pages in the format that you prefer.</span>
+              </div>
+            </div>
+            <div class="containerElement">
+              <div class="containerLeft"><a
+                  href="https://support.google.com/websearch?p=ws_images_usagerights&amp;hl=en">usage
+                  rights</a>:</div>
+              <div class="containerCenter">
+                <div class="form-floating">
+                  <select class="form-select" id="floatingSelect" aria-label="Floating label select example"
+                    style="height: 27px;">
+                    <option value="0">not filtered by licence</option>
+                    <option value="1">free to use or share</option>
+                    <option value="0">free to use share or modify</option>
+                    <option value="1">free to use, share or modify, even commercially</option>
+                  </select>
+                </div>
+              </div>
+              <div class="containerRight"><span>Find pages that you are free to use yourself.</span></div>
+            </div>
+          </div>
+          <div class="containerElement" style="height: 50px;">
+            <div class="containerLeft"></div>
+            <div class="containerCenter">
+              <button type="submit" class="btn btn-primary" id="customSearch">Advanced Search</button>
+            </div>
+            <div class="containerRight"></div>
+          </div>
+          <div class="line"></div>
+        </form>
+        <div class="fourContainer">
+          <div style="clear:both;font-size:13px;line-height:18px;margin-bottom:90px">
+            <div class="lFApYd">
+              <div class="lOTAE"><span style="font-size:18px;line-height:18px;">You can
+                  also...</span></div>
+            </div>
+            <div style="clear:both" id="fourLinks"><a
+                href="https://support.google.com/websearch?p=adv_pages_similar&amp;hl=en">Find
+                pages
+                that are similar to a URL</a></div>
+            <div id="fourLinks"><a href="https://support.google.com/websearch?p=adv_pages_visited&amp;hl=en">Search
+                pages
+                that you've
+                visited</a></div>
+            <div id="fourLinks"><a href="https://support.google.com/websearch?p=adv_operators&amp;hl=en">Use operators
+                in
+                the search
+                box</a></div>
+            <div id="fourLinks"><a href="/preferences?hl=en-AR">Customise your search settings</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="footerSpan"><span>By: Andrés Eduardo Genes</span>
+    </div>
+    <div class="footerSpan"><span><img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Harvard_University_logo.svg/1280px-Harvard_University_logo.svg.png"
+          alt="Harvard Logo" id="harvardLogo"> - Cambridge, MA, United States</span>
+    </div>
+    <div class="footerSpan"><span>Professors: Brian Yu (brian@cs.harvard.edu) & David J. Malan (malan@cs.harvard.edu)
+        <img src="https://online-learning.harvard.edu/sites/default/files/shields/harvard-engineering.png"
+          alt="Harvard Logo" style="width: 25px; margin: 15px;"> Harvard School of Engineering and Applied
+        Sciences.</span>
+    </div>
+  </footer>
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
